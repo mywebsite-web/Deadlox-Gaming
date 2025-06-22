@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đeadløx - The Best Gaming Brand</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #1c0030, #3a0055);
+      color: white;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    /* Header and Navigation */
+    header {
+      background-color: #f2ffe1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #4b0082;
+      text-shadow: 0 0 10px #c6ff00, 0 0 20px #ff00ff;
+      text-decoration: none;
+    }
+    .menu-icon {
+      font-size: 26px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #4b0082;
+      color: #fff;
+    }
+    .nav-options {
+      position: absolute;
+      top: 100%;
+      right: 20px;
+      background-color: #1c0030;
+      padding: 15px 20px;
+      border-radius: 10px;
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .nav-options.active {
+      display: flex;
+    }
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 5px;
+      background-color: #4b0082;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+    .nav-link:hover {
+      background-color: #c6ff00;
+      color: black;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: linear-gradient(45deg, #020024, #7e0085, #00d4ff);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+    }
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: #c6ff00;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: #b56aff;
+    }
+    .hero p {
+      margin: 20px auto;
+      max-width: 600px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .cta-btn {
+      background: #c6ff00;
+      color: black;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    /* Section Divs */
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 30px 10px;
+    }
+    .button-container a {
+      display: block;
+      padding: 15px 30px;
+      border-radius: 40px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      background-color: #1c1c1c;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .button-container a:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0, 255, 0, 0.5);
+    }
+    .highlight {
+      background-color: #c6ff00;
+      color: black;
+      box-shadow: 0 4px 10px rgba(198, 255, 0, 0.7);
+    }
+    .highlight:hover {
+      box-shadow: 0 8px 20px rgba(198, 255, 0, 1);
+    }
+
+    /* WhatsApp Button */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .whatsapp img {
+      width: 30px;
+    }
+
+    footer {
+  background: #1c0030;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+.footer-about h4,
+.footer-links h4,
+.footer-social h4 {
+  color: #c6ff00;
+  margin-bottom: 10px;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li {
+  margin: 5px 0;
+}
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-links ul li a:hover {
+  color: #c6ff00;
+}
+.footer-social .social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-social .social-icons a:hover {
+  color: #c6ff00;
+}
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#hero" class="logo">Đeadløx</a>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <div class="nav-options" id="navMenu">
+      <a href="account.html" class="nav-link">Accounts</a>
+      <a href="items.html" class="nav-link">Items</a>
+      <a href="coins.html" class="nav-link highlight">Coins</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+      <a href="gadgets.html" class="nav-link">Gadgets</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </header>
+  <section class="hero" id="hero">
+    <h1>The Best</h1>
+    <h2>Gaming Platform</h2>
+    <p>
+      Secure trading for accounts, gaming gadgets, and in-game currencies. 
+      Đeadløx is your one-stop gaming platform.
+    </p>
+    <a href="https://wa.me/2349157286254" class="cta-btn">Get Started</a>
+  </section>
+  <div class="button-container">
+    <a href="account.html">Accounts</a>
+    <a href="items.html">Items</a>
+    <a href="coins.html" class="highlight">Coins</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="gadgets.html">Gadgets</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="https://wa.me/08113011654" class="whatsapp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+  <script>
+    function toggleMenu() {
+      const navMenu = document.getElementById("navMenu");
+      navMenu.classList.toggle("active");
+    }
+  </script>
+</body>
+<!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h4>About Đeadløx</h4>
+      <p>
+        Đeadløx is your trusted gaming platform for secure trading, gadgets, and in-game currencies. 
+        Join us and elevate your gaming experience.
+      </p>
+    </div>
+    
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Đeadløx. All rights reserved.</p>
+  </div>
+</footer>
+
+</html>

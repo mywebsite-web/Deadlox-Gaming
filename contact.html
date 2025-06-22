@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Đeadløx</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #1c0030, #3a0055);
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #0d0d0d;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 25px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #c6ff00;
+      text-decoration: none;
+    }
+    .nav-options {
+      display: flex;
+      gap: 20px;
+    }
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-shadow: 0 0 5px #ffffff;
+    }
+    .nav-link:hover {
+      background-color: rgba(255, 0, 255, 0.1);
+      color: #ff00ff;
+      text-shadow: 0 0 10px #ff00ff;
+    }
+    .content {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .content h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: #c6ff00;
+      margin-bottom: 30px;
+    }
+    .form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(8px);
+    }
+    .form input, .form textarea, .form button {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+    }
+    .form input, .form textarea {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+    .form button {
+      background: #c6ff00;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .form button:hover {
+      background: #b5e600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Đeadløx</a>
+    <div class="nav-options">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+    </div>
+  </header>
+  <section class="content">
+    <h1>Contact Us</h1>
+    <div class="form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đeadløx - Gaming Gadgets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #1c0030, #3a0055);
+      color: white;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    /* Header */
+    header {
+      background-color: #f2ffe1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #4b0082;
+      text-shadow: 0 0 10px #c6ff00, 0 0 20px #ff00ff;
+      text-decoration: none;
+    }
+    .menu-icon {
+      font-size: 26px;
+      cursor: pointer;
+      display: none;
+    }
+    .nav-options {
+      display: flex;
+      gap: 15px;
+    }
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 5px;
+      background-color: #4b0082;
+      transition: background-color 0.3s ease;
+    }
+    .nav-link:hover {
+      background-color: #c6ff00;
+      color: black;
+    }
+
+    /* Gadgets Section */
+    .gadgets {
+      padding: 40px 20px;
+    }
+    .gadgets h1 {
+      text-align: center;
+      color: #c6ff00;
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+    }
+    .gadget-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gadget-item {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gadget-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(198, 255, 0, 0.7);
+    }
+    .gadget-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .gadget-info {
+      padding: 15px;
+    }
+    .gadget-info h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .gadget-info p {
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    .gadget-info .price {
+      font-size: 1.1rem;
+      color: #c6ff00;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .gadget-info .buy-now {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #c6ff00;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .gadget-info .buy-now:hover {
+      background-color: #ff00ff;
+    }
+
+    /* Footer */
+    footer {
+      background: #1c0030;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    footer p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Đeadløx</a>
+    <nav class="nav-options">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <section class="gadgets">
+    <h1>Gaming Gadgets</h1>
+    <div class="gadget-grid">
+      <div class="gadget-item">
+        <img src="headphone.jpeg" alt="Gaming Gadget 1">
+        <div class="gadget-info">
+          <h3>Gaming Headset</h3>
+          <p>High-quality surround sound.</p>
+          <p class="price"></p>
+        <a href="https://wa.me/08113011654?text=Hi,%20I%20am%20interested%20in%20the%20Gaming%20Headset" class="buy-now">Buy Now</a>
+      
+      </div>
+      </div>
+      <div class="gadget-item">
+        <img src="phone.jpeg" alt="Gaming Gadget 2">
+        <div class="gadget-info">
+          <h3>Gaming Phone</h3>
+          <p>Best gaming device</p>
+          <p class="price"></p>
+          <a href="https://wa.me/08113011654?text=Hi,%20I%20am%20interested%20in%20the%20Gaming%20Phone" class="buy-now">Buy Now</a>
+        </div>
+      </div>
+      <div class="gadget-item">
+        <img src="ipad fan cooler.jpeg" alt="Gaming Gadget 3">
+        <div class="gadget-info">
+          <h3>Ipad Cooler</h3>
+          <p>Comfortable and Cold</p>
+          <p class="price"></p>
+        <a href="https://wa.me/08113011654?text=Hi,%20I%20am%20interested%20in%20the%20Ipad%20Cooler" class="buy-now">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Đeadløx. All rights reserved.</p>
+  </footer>
+</body>
+</html>

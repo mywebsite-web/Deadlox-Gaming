@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Gadgets - Đeadløx</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #1c0030, #3a0055);
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #0d0d0d;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 25px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #c6ff00;
+      text-decoration: none;
+    }
+    .nav-options {
+      display: flex;
+      gap: 20px;
+    }
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 5px;
+    }
+    .nav-link:hover {
+      background-color: rgba(255, 0, 255, 0.1);
+      color: #ff00ff;
+      text-shadow: 0 0 10px #ff00ff;
+    }
+    .content {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .content h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: #c6ff00;
+      margin-bottom: 30px;
+    }
+    .items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .item-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    .item-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .item-card p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #fff;
+    }
+    .buy-now {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #c6ff00;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+    .buy-now:hover {
+      background-color: #ff00ff;
+    }
+    /* WhatsApp Button */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .whatsapp img {
+      width: 30px;
+    }
+    /* Footer */
+    footer {
+      background: #1c0030;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    footer p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Đeadløx</a>
+    <div class="nav-options">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </header>
+  <section class="content">
+    <h1>Gaming Gadgets & Accessories</h1>
+    <div class="items">
+      <div class="item-card">
+        <img src="chair.jpeg" alt="Gaming Chair">
+        <p>High-comfort gaming chair for long hours of play.</p>
+        <a href="https://wa.me/08113011654?text=Hi,%20I%20am%20interested%20in%20the%20Gaming%20Chair" class="buy-now">Buy Now</a>
+      </div>
+      <div class="item-card">
+        <img src="table.jpeg" alt="Gaming Desk">
+        <p>Ergonomic gaming desk with cable management features.</p>
+        <a href="https://wa.me/08113011654?text=Hi,%20I%20am%20interested%20in%20the%20Gaming%20Desk" class="buy-now">Buy Now</a>
+      </div>
+      <div class="item-card">
+        <img src="headset.jpeg" alt="Headset">
+        <p>Noise-cancelling headset for crystal-clear audio.</p>
+        <a href="https://wa.me/08113011654?text=Hi,%20I%20am%20interested%20in%20the%20Headset" class="buy-now">Buy Now</a>
+      </div>
+      <div class="item-card">
+        <img src="ipad.jpeg" alt="iPad">
+        <p>iPad with high-performance specs for mobile gaming.</p>
+        <a href="https://wa.me/08113011654?text=Hi,%20I%20am%20interested%20in%20the%20iPad" class="buy-now">Buy Now</a>
+      </div>
+      <div class="item-card">
+        <img src="thumb sleve.jpeg" alt="Thumb Sleeves">
+        <p>Anti-slip thumb sleeves for improved grip and precision.</p>
+        <a href="https://wa.me/08113011654?text=Hi,%20I%20am%20interested%20in%20the%20Thumb%20Sleeves" class="buy-now">Buy Now</a>
+      </div>
+      <div class="item-card">
+        <img src="fan.jpeg" alt="Cooling Fan">
+        <p>Gaming phone cooler to prevent overheating.</p>
+        <a href="https://wa.me/08113011654?text=Hi,%20I%20am%20interested%20in%20the%20Cooling%20Fan" class="buy-now">Buy Now</a>
+      </div>
+    </div>
+  </section>
+  <a href="https://wa.me/08113011654?text=Hi,%20I%20am%20interested%20in%20one%20of%20your%20products" class="whatsapp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+  <footer>
+    <p>&copy; 2025 Đeadløx. All rights reserved.</p>
+  </footer>
+</body>
+</html>
